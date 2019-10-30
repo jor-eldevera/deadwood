@@ -4,6 +4,7 @@ public class Die {
     private Random sides = new Random();
     private int current;
 
+    
     /*
     roll. gets a random number between 1 and 6, sets the current side to this result,
     and then gets it as a return. 
@@ -15,6 +16,9 @@ public class Die {
     }
 
 
+    /*
+    setSide. Set the side of the die to side.
+    */
     public void setSide(int side){
         if (0 <= side  && side <= 6) {
             current = side;
@@ -23,6 +27,10 @@ public class Die {
         }
     }
 
+
+    /*
+    getSide. Return the current side (current).
+    */
     public int getSide() {
         return current;
     }
