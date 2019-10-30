@@ -11,7 +11,6 @@ public class Room {
     private String name;
     private int[] players;
     private String[] neighbors;
-    private RoleSpot[] roleSpots;
 
     /**
      * addPlayer
@@ -29,5 +28,13 @@ public class Room {
      */
     public void removePlayer() {
 
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
