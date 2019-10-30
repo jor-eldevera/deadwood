@@ -8,20 +8,12 @@ public class Player {
     private Boolean isTurn;
     private Room curRoom;
 
-    /*
-    setID. Set the ID field.
-    */
-    public void setID(int ID) {
+    /**** GETTERS ****/
+    public int getID() { return ID; }
+    public boolean isTurn() { return isTurn; }
 
-    }
-
-    /*
-    getID. return the ID field.
-    */
-    public int getID() {
-        return ID;
-    }
     
+    /**** SETTERS ****/
 
     /*
     setMoney. Sets the money field to change.
@@ -30,6 +22,14 @@ public class Player {
     
     }
     
+    
+    /*
+    setID. Set the ID field.
+    */
+    public void setID(int ID) {
+
+    }
+
 
     /*
     setCredits. Sets the credit field to change.
@@ -38,7 +38,15 @@ public class Player {
 
     }
 
+    
+    /*
+    setPractice. Sets the practice field to change.
+    */
+    public void setPractice(int change) {
 
+    }
+    
+    
     /*
     changeTurn. Flips the boolean value of isTurn. 
     */
@@ -48,18 +56,20 @@ public class Player {
 
 
     /*
-    isTurn. Returns the value of boolean field isTurn.
+    takeRole. Set RoleSpot field to newRole. 
+    
+    -- Perhaps allow for sending a "null" RoleSpot == removing a role --
     */
-    public boolean isTurn() {
-        return isTurn;
+    public void takeRole(RoleSpot newRole) {
+
     }
 
 
     /*
-    setPractice. Sets the practice field to change.
+    resetPractice. set practice field to 0. 
     */
-    public void setPractice(int change) {
-
+    public void resetPractice() {
+        setPractice(0);
     }
 
 
@@ -79,22 +89,14 @@ public class Player {
     }
 
 
+    /**** BEHAVIORS ****/
+
     /*
     move. Change the player's curRoom to newRoom. 
     
     -- Need to make sure this change is present wherever necessary! --
     */
     public void move(Room newRoom) {
-
-    }
-
-    
-    /*
-    takeRole. Set RoleSpot field to newRole. 
-    
-    -- Perhaps allow for sending a "null" RoleSpot == removing a role --
-    */
-    public void takeRole(RoleSpot newRole) {
 
     }
 
@@ -111,10 +113,5 @@ public class Player {
     }
 
 
-    /*
-    resetPractice. set practice field to 0. 
-    */
-    public void resetPractice() {
-        setPractice(0);
-    }
+
 }
