@@ -1,7 +1,8 @@
 /**
  * Jorell de Vera
  * Zack Doll
- * 2019
+ * Deadwood
+ * Fall 2019
  */
 
  /**
@@ -9,8 +10,8 @@
   */
 public class Room {
     private String name;
-    private int[] players;
-    private String[] neighbors;
+    private Collection<Integer> players = new ArrayList<Integer>();
+    private Collection<Room> neighbors = new ArrayList<Room>();
 
     /**
      * addPlayer

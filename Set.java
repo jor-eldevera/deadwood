@@ -1,6 +1,7 @@
 /**
  * Jorell de Vera
  * Zack Doll
+ * Deadwood
  * Fall 2019
  */
 
@@ -8,7 +9,7 @@
   * Set
   */
 public class Set extends Room {
-    private RoleSpot[] roleSpots;
+    private Collection<RoleSpot> roles = new ArrayList<RoleSpot>();
     private int shots;
     private SceneCard sceneCard;
 
@@ -18,7 +19,7 @@ public class Set extends Room {
      * @return true if the card is flipped, false otherwise
      */
     private boolean isCardFlipped() {
-
+      return sceneCard.isFlipped();
     }
 
     /**

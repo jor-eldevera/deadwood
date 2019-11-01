@@ -1,7 +1,6 @@
 /**
  * Jorell de Vera
  * Zack Doll
- * Deadwood
  * Fall 2019
  */
 
@@ -16,7 +15,7 @@ public class RoleSpot {
 	 * @return whether the Role Spot is occupied
 	 */
 	public boolean isOccupied() {
-		return this.occupied;
+
 	}
 
 	/**
@@ -34,7 +33,7 @@ public class RoleSpot {
 	}
 
 	public int getRank() {
-		return this.rank;
+
 	}
 
 	public void setID(String id) {
@@ -42,6 +41,6 @@ public class RoleSpot {
 	}
 
 	public String getID() {
-		return this.spotID;
+
 	}
 }
