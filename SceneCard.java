@@ -12,7 +12,7 @@ public class SceneCard {
     private String name;
     private String desc;
     private int budget;
-    private RoleSpot[] roles;
+    private Collection<RoleSpot> roles = new ArrayList<RoleSpot>();
 	private boolean isFlipped;
 
 	/**
