@@ -22,7 +22,7 @@ public class SceneCard {
 	 * @return state of the card AFTER the flip occurs
 	 */
 	public boolean flip() {
-
+		return this.isFlipped;
 	}
 
 	public void setName(String name) {
@@ -30,7 +30,7 @@ public class SceneCard {
 	}
 
 	public String getName() {
-
+		return this.name;
 	}
 
 	public void setDesc(String desc) {
@@ -38,7 +38,7 @@ public class SceneCard {
 	}
 
 	public String getDesc() {
-
+		return this.getDesc();
 	}
 
 	public void setBudget(int budget) {
@@ -46,14 +46,14 @@ public class SceneCard {
 	}
 
 	public int getBudget() {
-
+		return this.budget();
 	}
 
 	public void setRoles(Rolespot[] roles) {
 
 	}
 
-	public RoleSpot[] getRoles() {
-
+	public ArrayList<RoleSpot> getRoles() {
+		return this.roles;
 	}
 }

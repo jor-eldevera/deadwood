@@ -19,7 +19,7 @@ public class Set extends Room {
      * @return true if the card is flipped, false otherwise
      */
     private boolean isCardFlipped() {
-
+      return sceneCard.isFlipped();
     }
 
     /**
