@@ -5,12 +5,12 @@ public class Die {
     private int current;
 
     
-    /*
-    roll. gets a random number between 1 and 6, sets the current side to this result,
-    and then gets it as a return. 
-    */
+    /**
+     * roll. Gets a random number between 1 and 6, sets the current side to this result.
+     * @return result 
+     */
     public int roll() {
-        int result = sides.nextInt(6)+1; //random number between 0 and 5, add 1 so it's between 1 and 6
+        int result = sides.nextInt(6)+1;
         setSide(result);
         return getSide();
     }

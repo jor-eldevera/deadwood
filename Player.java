@@ -1,4 +1,6 @@
 public class Player {
+    
+    /**** FIELDS ****/
     private int ID;
     private Die rank;
     private int money = 0;
@@ -8,13 +10,13 @@ public class Player {
     private Boolean isTurn;
     private Room curRoom;
 
+    
     /**** GETTERS ****/
     public int getID() { return ID; }
     public boolean isTurn() { return isTurn; }
 
     
     /**** SETTERS ****/
-
     /*
     setMoney. Sets the money field to change.
     */

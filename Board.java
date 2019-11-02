@@ -1,14 +1,25 @@
 import java.util.*;
 
 public class Board {
+    /**** FIELDS ****/
+    private Collection<Room> rooms = new ArrayList<Room>();
     
-    private Collection<Room> rooms = new ArrayList<Room>(); //is this a useful abstraction? Not sure where the actual implementation would happen
     
+    /**** BEHAVIORS/MODIFIERS ****/
     /*
     pMoveOpts. Take a Player and use its curRoom to find the Room's
     neighbors. Print these neighbors to the user.
     */
     public void pMoveOpts(Player p) {
+    }
+
+
+    /**
+     * 
+     * @param p player
+     * @param newRoom
+     */
+    public void movePlayer(Player p, Room newRoom) {        
     }
     
     /*
@@ -45,6 +56,10 @@ public class Board {
     public void placeShotCounter(Set set) {
     }
 
+    /*
+    rmvShotCounter. Remove a shot counter from set.
+    */
+    public void rmvShotCounter(Set set) {
 
-    
+    }
 }

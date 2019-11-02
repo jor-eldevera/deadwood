@@ -48,4 +48,49 @@ public class Set extends Room {
     public void replaceShots() {
 
     }
+
+
+    /**
+     * setScene. Set scene.
+     * @param scene          
+     */
+    public void setScene(SceneCard scene) {
+
+    }
+
+    /**
+     * getScene
+     * 
+     * @return scene card on this set
+     */
+    public SceneCard getScene() {
+      return this.sceneCard;
+    }
+
+    /**
+     * setRoles
+     * 
+     * @param roles group of roles to place in the Set
+     */
+    public void setRoles(Collection<RoleSpot> roles) {
+
+    }
+
+    /**
+     * getRoles
+     * 
+     * @return roles on this Set
+     */
+    public Collection<RoleSpot> getRoles() {
+      return this.roles
+    }
+
+    /**
+     * getShots
+     * 
+     * @return number of shot counters on this Set
+     */
+    public int getShots() {
+      return this.shots;
+    }
 }

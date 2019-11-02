@@ -25,8 +25,8 @@ public class RoleSpot {
 	 * switches the state of occupied
 	 * @return the state of occupied AFTER the flip occurs
 	 */
-	public void flipOccupied() {
-
+	public boolean flipOccupied() {
+		return isOccupied();
 	}
 
 	public void setRank(int rank) {
